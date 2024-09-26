@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+  @keyframes slide-ri {
+    
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+
+  
+
+
+  .custom-slide-in {
+    animation: slide-in 1s ease forwards;
+  }
+
+  
+  .outline-text {
+    -webkit-text-stroke: 2px #173c35; /* Outlined effect */
+    font-weight: bold;
+  }
+
+
+}
